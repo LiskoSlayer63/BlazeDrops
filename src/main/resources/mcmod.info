@@ -1,0 +1,16 @@
+[
+{
+  "modid": "blazedrops",
+  "name": "Blaze Drops",
+  "description": "Causes Blazes to drop loot even if they are not killed by a player.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Ninjabrain1"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
