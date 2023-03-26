@@ -1,21 +1,18 @@
 package ninjabrain.blazedrops;
 
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import org.slf4j.Logger;
 
-@Mod(modid = BlazeDrops.MODID, name = BlazeDrops.NAME, version = BlazeDrops.VERSION)
+import com.mojang.logging.LogUtils;
+import net.minecraftforge.fml.common.Mod;
+
+@Mod(BlazeDrops.MODID)
 public class BlazeDrops {
 
 	public static final String MODID = "blazedrops";
-	public static final String NAME = "Blaze Drops";
-	public static final String VERSION = "1.0";
+    public static final Logger LOGGER = LogUtils.getLogger();
 
-	@EventHandler
-	public void preInit(FMLPreInitializationEvent event) {
-		MinecraftForge.EVENT_BUS.register(new DropEventHandler());
-	}
-	
+    public BlazeDrops() 
+    {
+    	LOGGER.info("Blaze Drops enabled!");
+    }
 }

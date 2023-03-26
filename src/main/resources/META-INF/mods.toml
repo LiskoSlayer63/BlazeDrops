@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[43,)"
+license = "GNU LGPLv3"
+[[mods]]
+modId = "blazedrops"
+version = "${file.jarVersion}"
+displayTest="IGNORE_ALL_VERSION"
+displayName = "Blaze Drops"
+displayURL = "https://github.com/LiskoSlayer63/BlazeDrops"
+authors = "ninjabrain1, LiskoSlayer63"
+credits = "ninjabrain1"
+description = '''
+Causes Blazes to drop loot even if they are not killed by a player.
+
+Original mod written by ninjabrain1, now mostly rewritten by LiskoSlayer63
+'''
+[[dependencies.blazedrops]]
+modId = "forge"
+mandatory = true
+versionRange = "[43,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.blazedrops]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.2,1.20)"
+ordering = "NONE"
+side = "BOTH"
